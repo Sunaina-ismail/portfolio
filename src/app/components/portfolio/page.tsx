@@ -15,7 +15,7 @@ const Portfolio = () => {
 
     {
       id: 2,
-      imageSrc: '/resume.png',
+      imageSrc: '/resume.PNG',
       title: 'Resume Builder',
       description: 'Whether youre in tech, finance, or any other industry, our platform makes creating a professional resume quick and easy. Just fill in your details and youre ready to impress.',
       link: 'https://naina-shareable-resume.vercel.app/'
@@ -23,7 +23,7 @@ const Portfolio = () => {
 
     {
       id: 3,
-      imageSrc: '/pureplates.png',
+      imageSrc: '/pureplates.PNG',
       title: 'Food Website',
       description: ' This blog celebrates the art of food, sharing in-depth articles on culinary techniques, food culture, ingredient explorations, and the latest trends in the gastronomic world.',
       link: 'https://food-website-sunaina-ismails-projects.vercel.app/'
