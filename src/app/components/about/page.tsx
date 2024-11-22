@@ -18,7 +18,7 @@ const About = () => {
             ABOUT
           </h3>
           <h2 className='font-bold text-2xl lg:text-4xl mt-10 mb-6 md:mt-1 md:mb-4 font-serif text-lavender '>Curious About me? Here you have it:</h2>
-          <p className='md:text-xl'>I&apos;m Sunaina, a passionate web developer and designer. I specialize in building beautiful, responsive, and user-friendly websites using modern technologies like React, TypeScript, and Next.js. With a strong focus on clean code and seamless user experiences, I strive to create digital solutions that not only look great but also perform flawlessly. Explore my work and let's collaborate to bring your ideas to life!</p>
+          <p className='md:text-xl'>I&apos;m Sunaina, a passionate web developer and designer. I specialize in building beautiful, responsive, and user-friendly websites using modern technologies like React, TypeScript, and Next.js. With a strong focus on clean code and seamless user experiences, I strive to create digital solutions that not only look great but also perform flawlessly. Explore my work and let&apos;s collaborate to bring your ideas to life!</p>
           <br />
           <p className='md:text-xl'
           >My journey in web development is driven by a love for learning and the constant pursuit of improvement. Beyond coding, I&apos;m always exploring new design trends and techniques to keep my work both innovative and impactful.</p>
