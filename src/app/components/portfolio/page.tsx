@@ -1,10 +1,8 @@
 'use client'
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
 
 const Portfolio = () => {
-  const [visibleProjects, setVisibleProjects] = useState<Record<number, boolean>>({});
 
   const projects = [
     {
@@ -32,27 +30,6 @@ const Portfolio = () => {
     },
   ];
 
-  useEffect(() => {
-    const projectElements = document.querySelectorAll('.project');
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute('data-index'));
-          if (entry.isIntersecting) {
-            setVisibleProjects((prev) => ({ ...prev, [index]: true }));
-          } else {
-            setVisibleProjects((prev) => ({ ...prev, [index]: false }));
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    projectElements.forEach((project) => observer.observe(project));
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className="px-10 py-5 lg:my-20 w-[95%] lg:w-[90%] mx-auto lg:mb-10">
       <h2 className="text-3xl font-bold text-center text-white mb-10">Portfolio</h2>
@@ -62,8 +39,7 @@ const Portfolio = () => {
             key={project.id}
             data-index={index}
             className={`project flex flex-col items-center border-2 border-white p-2 rounded-lg transition-transform duration-700 ease-out bg-white
-              ${visibleProjects[index] ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-10 opacity-0'}
-            `}
+           `}
           >
             <div className="w-auto h-[200px] lg:w-[95%] overflow-hidden rounded-md">
               <Image

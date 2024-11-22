@@ -6,7 +6,7 @@ import React from 'react';
 const Skills = () => {
   const skills = [
     { src: "/typescript.webp", alt: "TypeScript", name: "TypeScript" },
-    { src: "/React.webp", alt: "React", name: "React" },
+    { src: "/react.png", alt: "React", name: "React" },
     { src: "/tailwind-css.png", alt: "Tailwind CSS", name: "Tailwind CSS" },
     { src: "/figma.png", alt: "Figma", name: "Figma" },
     { src: "/nextjs.png", alt: "Next.js", name: "Next.js" },
